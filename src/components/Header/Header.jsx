@@ -112,7 +112,7 @@ const Header = () => {
 
             <Link
               href="/about"
-              className={`nav-link ${isActive("/about") ? "active" : ""}`}
+              className={`nav-link ${isActive("/industries") ? "active" : ""}`}
               onClick={closeMenu}
             >
               Industries

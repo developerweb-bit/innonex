@@ -10,7 +10,7 @@ export default function HeroSection() {
       {/* <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-indigo-600/20 blur-[120px] rounded-full"></div>
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-purple-600/20 blur-[120px] rounded-full"></div> */}
 
-      <div className="relative max-w-7xl mx-auto px-6 py-10 grid lg:grid-cols-2 gap-16 items-center">
+      <div className="relative max-w-8xl mx-auto px-6 py-10 grid lg:grid-cols-2 gap-16 items-center">
 
         {/* LEFT CONTENT */}
         <div>
@@ -59,7 +59,7 @@ export default function HeroSection() {
             <Image
               src={bg}
               alt="Team Illustration"
-              width={600}
+              width="100%"
               height={800}
               className="rounded-lg object-cover"
             />

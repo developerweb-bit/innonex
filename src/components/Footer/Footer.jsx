@@ -5,7 +5,7 @@ import map from "../../../public/map.png";
 export default function Footer() {
   return (
     <footer className="bg-cover bg-center globbg text-white relative ">
-      <div className="max-w-7xl mx-auto px-6 py-18 pb-5">
+      <div className="max-w-8xl mx-auto px-6 py-18 pb-5">
         {/* Top Section */}
         {/* Disclaimer */}
         <Image

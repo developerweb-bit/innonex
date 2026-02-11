@@ -1,0 +1,29 @@
+.bike-icon {
+  transition: transform 3s ease;
+}
+
+/* Jab .btn hover ho tab bike move kare */
+.space-y-2:has(.btn:hover) .bike-icon {
+  transform: translateX(43px);
+}
+.btn {
+  position: relative;
+}
+
+.btn-bg {
+  position: absolute;
+  inset: 0;
+  background: white;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+  z-index: 0;
+  transition: transform 3s ease;
+
+}
+
+/* Hover pe background right move kare */
+.btn:hover .btn-bg {
+  transform: translateX(0%);
+  
+}
+

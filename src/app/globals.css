@@ -6,35 +6,34 @@
   --globbg: #034833;
   --heading: #0e191e;
   --para: #727272;
-  --border:  #E3DBD8;
-  --primaryhead: #16171A;
+  --border: #e3dbd8;
+  --primaryhead: #16171a;
 }
-
 
 body {
-  background: var(--background); 
+  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  max-width: 1900px;
 }
 
-button{
+button {
   cursor: pointer;
 }
-.head{
+.head {
   color: var(--globbg);
 }
-.head-sec{
+.head-sec {
   color: var(--primaryhead);
 }
-.globbg{
+.globbg {
   background: var(--globbg);
-
 }
-.green{
+.green {
   color: var(--icon);
 }
-.bggreen{
+.bggreen {
   background: var(--icon);
 }
-.para{
+.para {
   color: var(--para);
 }
