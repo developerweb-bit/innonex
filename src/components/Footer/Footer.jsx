@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import map from "../../../public/map.png";
+import map2 from "../../../public/about/map2.png";
+
 
 export default function Footer() {
   return (
@@ -28,8 +30,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/industries" className="hover:underline">
+                  Industries
+                </Link>
+              </li>
+              <li>
                 <Link href="/about" className="hover:underline">
-                  About
+                  About Us
                 </Link>
               </li>
 

@@ -14,10 +14,15 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   max-width: 1900px;
+  margin: auto;
 }
 
 button {
   cursor: pointer;
+}
+
+.heading {
+  color: var(--heading);
 }
 .head {
   color: var(--globbg);

@@ -1,0 +1,33 @@
+// .no-scrollbar::-webkit-scrollbar {
+//   display: none;
+// }
+// .no-scrollbar {
+//   -ms-overflow-style: none;
+//   scrollbar-width: none;
+// }
+
+
+/* Chrome, Edge, Safari */
+.no-scrollbar::-webkit-scrollbar {
+  height: 6px; /* horizontal scrollbar height */
+}
+
+.no-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.no-scrollbar::-webkit-scrollbar-thumb {
+  background: #16a34a; /* green color */
+  border-radius: 10px;
+}
+
+.no-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #15803d; /* darker green on hover */
+}
+
+/* Firefox */
+.no-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #16a34a #f1f1f1;
+}

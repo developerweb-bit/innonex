@@ -3,6 +3,8 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import "./Header.scss";
+import logo from "../../../public/newlogo.png"
+import Image from "next/image";
 // import ConsultationPopup from "../ConsultationForm/ConsultationForm";
 
 const Header = () => {
@@ -39,7 +41,14 @@ const Header = () => {
       <header className="header   backdrop-blur-md z-40 relative  ">
         <div className="header__inner">
           <Link href="/" className="header__logo">
-            <h1>Innonex</h1>
+            {/* <h1>Innonex</h1> */}
+            <Image
+            src={logo}
+            alt="Innonex"
+            height={70}
+            >
+
+            </Image>
           </Link>
 
           <button

@@ -198,7 +198,7 @@ export default function page() {
         </div>
 
         {/* MISSION & VISION */}
-        <section className="relative py-24 px-6 rounded-3xl mt-40 md:px-16 overflow-hidden bg-[var(--globbg)] text-white">
+        <section className="relative py-24 px-6 rounded-3xl mt-40 md:px-16 overflow-hidden globbg text-white">
           <Image
             src={vision}
             alt="Vision background"
