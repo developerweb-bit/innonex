@@ -1,12 +1,14 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 
 import rob from "../../../public/home/rob.png";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import PopupForm from "../PopupForm/PopupForm";
 
 export default function CTA() {
+  const [open, setOpen] = useState(false);
   return (
     <div>
       <div className="max-w-8xl mx-auto text-center bg-green-600 rounded-3xl py-16 pt-10 px-8 text-white shadow-2xl">
@@ -32,13 +34,14 @@ export default function CTA() {
             Get Started Today
           </Link>
 
-          <Link
-            href="/schedule-call"
+          <button
+            onClick={() => setOpen(true)}
             className="border border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-green-700 transition flex items-center justify-center gap-2"
           >
             Schedule a Strategy Call
             <ArrowRight size={18} />
-          </Link>
+          </button>
+          <PopupForm isOpen={open} onClose={() => setOpen(false)} />
         </div>
       </div>
     </div>

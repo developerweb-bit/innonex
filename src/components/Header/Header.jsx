@@ -3,8 +3,9 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import "./Header.scss";
-import logo from "../../../public/newlogo.png"
+import logo from "../../../public/newlogo.png";
 import Image from "next/image";
+import PopupForm from "../PopupForm/PopupForm";
 // import ConsultationPopup from "../ConsultationForm/ConsultationForm";
 
 const Header = () => {
@@ -42,13 +43,7 @@ const Header = () => {
         <div className="header__inner">
           <Link href="/" className="header__logo">
             {/* <h1>Innonex</h1> */}
-            <Image
-            src={logo}
-            alt="Innonex"
-            height={70}
-            >
-
-            </Image>
+            <Image src={logo} alt="Innonex" height={70}></Image>
           </Link>
 
           <button
@@ -197,7 +192,7 @@ const Header = () => {
           </button>
         </div>
       </header>
-      {/* <ConsultationPopup open={open} setOpen={setOpen} /> */}
+      <PopupForm isOpen={open} onClose={() => setOpen(false)} />
     </>
   );
 };

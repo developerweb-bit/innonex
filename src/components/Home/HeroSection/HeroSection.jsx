@@ -1,18 +1,20 @@
 "use client";
 import Image from "next/image";
-import bg from "../../../../public/home1.jpg"
-import hm from "../../../../public/hm.webp"
+import bg from "../../../../public/home1.jpg";
+import hm from "../../../../public/hm.webp";
+import PopupForm from "@/components/PopupForm/PopupForm";
+import { useState } from "react";
 
 export default function HeroSection() {
+  const [open, setOpen] = useState(false);
+
   return (
     <section className="relative overflow-hidden  ">
-      
       {/* Background Glow */}
       {/* <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-indigo-600/20 blur-[120px] rounded-full"></div>
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-purple-600/20 blur-[120px] rounded-full"></div> */}
 
       <div className="relative max-w-8xl mx-auto  py-10 grid lg:grid-cols-2 gap-16 items-center">
-
         {/* LEFT CONTENT */}
         <div>
           <p className="head font-semibold mb-4">
@@ -24,8 +26,9 @@ export default function HeroSection() {
           </h1>
 
           <p className="mt-6 text-lg par max-w-xl">
-            Innonex Systems helps companies hire and manage skilled global talent 
-            across operations, finance, support, and technology — without the hiring overhead.
+            Innonex Systems helps companies hire and manage skilled global
+            talent across operations, finance, support, and technology — without
+            the hiring overhead.
           </p>
 
           {/* Value Points */}
@@ -48,10 +51,14 @@ export default function HeroSection() {
             <button className="bggreen  transition text-white px-6 py-3 rounded-lg font-semibold shadow-lg shadow-indigo-600/30">
               Hire Talent
             </button>
-            <button className="border border-white/20 hover:bg-white/10 transition px-6 py-3 rounded-lg font-semibold">
+            <button
+              onClick={() => setOpen(true)}
+              className="border border-white/20 hover:bg-white/10 transition px-6 py-3 rounded-lg font-semibold"
+            >
               Talk to a Specialist
             </button>
           </div>
+          <PopupForm isOpen={open} onClose={() => setOpen(false)} />
         </div>
 
         {/* RIGHT VISUAL */}
@@ -94,7 +101,6 @@ export default function HeroSection() {
           <Stat number="92%" label="Client Retention" />
         </div>
       </div>
-
     </section>
   );
 }

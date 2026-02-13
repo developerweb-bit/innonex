@@ -1,4 +1,6 @@
 @import "tailwindcss";
+/* @import "react-datepicker/dist/react-datepicker.css"; */
+
 
 :root {
   --background: #f1f5eb;
@@ -41,4 +43,13 @@ button {
 }
 .para {
   color: var(--para);
+}
+
+
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  position: absolute;
+  right: 10px;
 }
