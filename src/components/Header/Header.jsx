@@ -24,7 +24,7 @@ const Header = () => {
   };
 
   const navServiceLinks = [
-    "/services",
+    "/service",
     "/employer-of-record",
     "/outsourced-accounting",
     "/offshore-accounting",
@@ -79,7 +79,7 @@ const Header = () => {
                 }`}
                 type="button"
               >
-                <Link href="/services">Solutions</Link>
+                <Link href="/service">Solutions</Link>
                 <span className="chevron">
                   <svg
                     className="w-4 h-4 mt-1"

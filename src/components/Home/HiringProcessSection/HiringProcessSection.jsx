@@ -8,6 +8,7 @@ import rob from "../../../../public/home/rob.png";
 import prmap from "../../../../public/home/ax.png";
 import rb from "../../../../public/home/rb.png";
 import Image from "next/image";
+import TestimonialSection from "@/components/TestimonialSection/TestimonialSection";
 // import "./hr.scss"
 
 const steps = [
@@ -68,7 +69,9 @@ export default function HiringProcessSection() {
           </div>
         ))}
       </div>
-{/* map */}
+
+      
+      {/* map */}
       <div className="relative  globbg py-10 rounded-3xl my-20 mb-10">
         <h2 className="text-5xl text-white mb-1 text-center font-bold">
           Our <span className="green">Global</span> Presence
@@ -78,21 +81,20 @@ export default function HiringProcessSection() {
           world.
         </p>
         <div className="flex gap-5">
-
-        <Image
-          src={prmap}
-          alt="map"
-          height={200}
-          width={600}
-          className="object-cover  rounded-3xl mx-auto brightness-105"
-        />
-        <Image
-          src={rb}
-          alt="map"
-          height={20}
-          width={160}
-          className="object-cover absolute right-5 top-245 sm:top-75 rounded-3xl mx-auto brightness-105"
-        />
+          <Image
+            src={prmap}
+            alt="map"
+            height={200}
+            width={600}
+            className="object-cover  rounded-3xl mx-auto brightness-105"
+          />
+          <Image
+            src={rb}
+            alt="map"
+            height={20}
+            width={160}
+            className="object-cover absolute right-5 top-245 sm:top-75 rounded-3xl mx-auto brightness-105"
+          />
         </div>
       </div>
 
@@ -136,6 +138,8 @@ export default function HiringProcessSection() {
           </p>
         </div>
       </div>
+
+      <TestimonialSection />
 
       {/* FINAL CTA */}
       <div className="max-w-8xl mx-auto text-center bg-green-600 rounded-3xl py-16 pt-10 px-8 text-white shadow-2xl">
