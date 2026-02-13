@@ -4,6 +4,9 @@ import { CheckCircle, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import build from "../../../../public/home/build.jpg";
 import rob from "../../../../public/home/rob.png";
+
+import prmap from "../../../../public/home/ax.png";
+import rb from "../../../../public/home/rb.png";
 import Image from "next/image";
 // import "./hr.scss"
 
@@ -64,6 +67,33 @@ export default function HiringProcessSection() {
             <p className="text-gray-600 text-sm leading-relaxed">{step.desc}</p>
           </div>
         ))}
+      </div>
+{/* map */}
+      <div className="relative  globbg py-10 rounded-3xl my-20 mb-10">
+        <h2 className="text-5xl text-white mb-1 text-center font-bold">
+          Our <span className="green">Global</span> Presence
+        </h2>
+        <p className="text-center text-white mb-3">
+          We are exporting our services to more than 11 countries around the
+          world.
+        </p>
+        <div className="flex gap-5">
+
+        <Image
+          src={prmap}
+          alt="map"
+          height={200}
+          width={600}
+          className="object-cover  rounded-3xl mx-auto brightness-105"
+        />
+        <Image
+          src={rb}
+          alt="map"
+          height={20}
+          width={160}
+          className="object-cover absolute right-5 top-245 sm:top-75 rounded-3xl mx-auto brightness-105"
+        />
+        </div>
       </div>
 
       {/* WHY INNONEX */}

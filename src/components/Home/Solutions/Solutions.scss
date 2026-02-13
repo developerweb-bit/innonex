@@ -2,6 +2,7 @@
   padding: 0 2rem 0 5rem;
   margin-top: 1rem;
   height: 100vh;
+  max-height: 620px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -21,7 +22,6 @@
     -webkit-backdrop-filter: blur(7px);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    
 
     .heading-container {
       .heading {
@@ -36,8 +36,6 @@
         line-height: 3.3rem;
         // color: var(--text-primary);
         font-weight: 700;
-
-      
       }
 
       .role-text {
@@ -48,7 +46,6 @@
 
     .para {
       width: 85%;
-
 
       .about-para {
         font-size: 1rem;
@@ -152,7 +149,6 @@
 @media (max-width: 1300px) {
   .about-founder {
     .left-container {
-
       .para {
         width: 90%;
         // margin: 2rem 0;
